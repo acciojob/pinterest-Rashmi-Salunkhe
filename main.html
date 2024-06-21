@@ -1,16 +1,74 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+	<style>
+		body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 45%;
+    object-fit: cover;
+}
+
+.hero-content {
+    width: 40%;
+    padding: 40px;
+    display: flex;
+	align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.5em;
+	align-items: center;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+	align-items: center;
+}
+
+.explore-btn {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+.explore-btn:hover {
+    background-color: #e64a19;
+}
+
+	</style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="hero">
+        <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hero Image">
+        <div class="hero-content">
+            <h1>Welcome to my Pinterest clone</h1>
+            <p>Discover new inspiration and save your favorite ideas</p>
+            <a href="#" class="explore-btn">Explore now</a>
+        </div>
+    </div>
 </body>
-
 </html>
